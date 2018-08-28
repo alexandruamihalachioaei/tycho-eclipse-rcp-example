@@ -77,8 +77,10 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="com.github.skosmalla.tycho.rcp.application"
-            name="Tycho RCP Sample Application">
+            application="com.github.skosmalla.tycho.rcp.plugin.application">
+         <property
+               name="appName">
+         </property>
          <!--<property
                name="appName">
          </property>-->

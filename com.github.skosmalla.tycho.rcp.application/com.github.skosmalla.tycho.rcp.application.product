@@ -7,7 +7,8 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages/>
@@ -15,7 +16,6 @@
    <splash
       location="com.github.skosmalla.tycho.rcp.plugin" />
    <launcher>
-      <solaris/>
       <win useIco="false">
          <bmp/>
       </win>
@@ -29,10 +29,19 @@
 
    <features>
       <feature id="com.github.skosmalla.tycho.rcp.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.rcp" version="4.8.0.v20180611-0656"/>
+      <feature id="org.eclipse.emf.ecore" version="2.14.0.v20180529-1144"/>
+      <feature id="org.eclipse.emf.common" version="2.14.0.v20180527-1134"/>
+      <feature id="org.eclipse.e4.rcp"/>
    </features>
 
    <configurations>
       <plugin id="com.github.skosmalla.tycho.rcp.plugin" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.swt" autoStart="true" startLevel="0" />
    </configurations>
 
