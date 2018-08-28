@@ -18,7 +18,7 @@
 	</modules>
 
 	<properties>
-		<tycho.version>0.18.0</tycho.version>
+		<tycho.version>1.0.0</tycho.version>
 		<tycho.groupid>org.eclipse.tycho</tycho.groupid>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,7 +51,7 @@
 						<environment>
 							<os>win32</os>
 							<ws>win32</ws>
-							<arch>x86</arch>
+							<arch>x86_64</arch>
 						</environment>
 					</environments>
 				</configuration>
